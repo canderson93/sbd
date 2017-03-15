@@ -148,7 +148,7 @@ exports.isPhoneNr = function(str) {
 // Match urls / emails
 // http://stackoverflow.com/a/3809435/951517
 exports.isURL = function(str) {
-    return str.match(/[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/);
+    return str.match(/(https?:\/\/).[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/);
 };
 
 // Starting a new sentence if beginning with capital letter
